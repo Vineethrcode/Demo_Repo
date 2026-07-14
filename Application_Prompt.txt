@@ -1,0 +1,398 @@
+# Project Specification: ShopSphere Demo Backend
+
+You are an experienced Senior Python Backend Engineer.
+
+Your task is to build a **production-inspired Python backend** that will be used as a **QA testing playground** for multiple AI-powered Software Testing products.
+
+This is NOT a tutorial project.
+This is NOT a beginner CRUD application.
+This is NOT an academic assignment.
+
+The objective is to create a realistic backend that looks like something developed inside a software company.
+
+---
+
+## Primary Goal
+
+The backend will be used for an AI project called:
+
+**AI Regression Impact Analyzer**
+
+The application itself will NOT be deployed.
+
+Instead, it will be used to:
+
+* Create realistic Git commits
+* Generate Git diffs
+* Simulate production code changes
+* Test AI-based regression impact analysis
+* Create multiple QA scenarios
+
+Therefore, the project should contain meaningful business logic and realistic dependencies between modules.
+
+---
+
+# Technology
+
+Language:
+
+* Python 3.12+
+
+Use only the Python standard library.
+
+Do NOT use:
+
+* Django
+* Flask
+* FastAPI
+* SQLAlchemy
+* External APIs
+* Docker
+* Databases
+
+Keep everything file-based and modular.
+
+---
+
+# Folder Structure
+
+Generate this structure.
+
+src/
+
+app.py
+
+auth/
+
+* authentication.py
+* authorization.py
+* session.py
+* password.py
+
+users/
+
+* profile.py
+* address.py
+* preferences.py
+
+products/
+
+* catalog.py
+* inventory.py
+* pricing.py
+* search.py
+* reviews.py
+
+cart/
+
+* cart.py
+* wishlist.py
+
+checkout/
+
+* checkout.py
+* shipping.py
+
+payment/
+
+* payment.py
+* coupon.py
+* invoice.py
+
+orders/
+
+* orders.py
+* order_history.py
+
+notifications/
+
+* notification.py
+* email.py
+
+common/
+
+* logger.py
+* validator.py
+* constants.py
+* utils.py
+
+README.md
+
+---
+
+# Code Size
+
+Generate approximately:
+
+* 20–30 Python files
+* 2,000–3,000 lines of code
+* Multiple classes
+* Multiple helper functions
+* Clean architecture
+* Meaningful comments only where necessary
+
+---
+
+# Coding Style
+
+Use:
+
+* Clean Python
+* Classes where appropriate
+* Functions where appropriate
+* Type hints
+* Docstrings
+* Good naming conventions
+* Consistent formatting
+* Readable code
+
+Avoid:
+
+* Dummy variables
+* Random print statements
+* Placeholder comments like "TODO"
+* Artificial complexity
+
+The code should look like a real internal company project.
+
+---
+
+# Business Modules
+
+Implement realistic logic for:
+
+Authentication
+
+* Login
+* Logout
+* Password validation
+* Password hashing (simple implementation)
+* Session creation
+* Session expiry
+
+User
+
+* View profile
+* Update profile
+* Address management
+* Preferences
+
+Products
+
+* Product catalogue
+* Search
+* Inventory
+* Pricing
+* Reviews
+
+Cart
+
+* Add item
+* Remove item
+* Update quantity
+* Wishlist
+
+Checkout
+
+* Shipping
+* Order validation
+* Total calculation
+
+Payment
+
+* Coupon validation
+* Discount calculation
+* Invoice generation
+* Payment processing simulation
+
+Orders
+
+* Create order
+* Cancel order
+* Order history
+
+Notifications
+
+* Email notifications
+* Order confirmation
+* Shipping notification
+
+---
+
+# Module Dependencies
+
+Design realistic dependencies.
+
+Example:
+
+Authentication
+
+↓
+
+Session
+
+↓
+
+Profile
+
+Products
+
+↓
+
+Inventory
+
+↓
+
+Cart
+
+↓
+
+Checkout
+
+↓
+
+Payment
+
+↓
+
+Orders
+
+↓
+
+Notifications
+
+Coupon
+
+↓
+
+Payment
+
+Inventory
+
+↓
+
+Checkout
+
+Orders
+
+↓
+
+Invoice
+
+The modules should depend on one another naturally.
+
+---
+
+# Business Rules
+
+Create realistic rules.
+
+Examples:
+
+A coupon cannot be applied twice.
+
+Inventory cannot become negative.
+
+Users cannot checkout with an empty cart.
+
+Payment cannot proceed without inventory validation.
+
+Orders cannot be created without successful payment.
+
+Cancelled orders cannot be shipped.
+
+Reviews require completed purchases.
+
+Session expires after inactivity.
+
+Password policy should include validation.
+
+Implement many similar realistic rules.
+
+---
+
+# QA-Oriented Design
+
+The project is intentionally built for AI testing.
+
+Design code so that future commits can easily simulate:
+
+Authentication fixes
+
+Coupon logic changes
+
+Payment calculation updates
+
+Inventory bugs
+
+Session timeout changes
+
+Search improvements
+
+Profile validation changes
+
+Notification changes
+
+Pricing changes
+
+Shipping logic updates
+
+Order processing updates
+
+Database migration simulations (without an actual database)
+
+Business rule modifications
+
+These scenarios will later be committed to Git and analyzed by an AI Regression Impact Analyzer.
+
+---
+
+# Architecture
+
+Keep the code modular.
+
+Each module should have a clear responsibility.
+
+Avoid putting everything into one file.
+
+---
+
+# Code Quality
+
+The repository should look like something a junior backend engineer with 1–2 years of experience could have developed under the guidance of a senior engineer.
+
+It should feel realistic.
+
+---
+
+# README
+
+Generate a professional README containing:
+
+Project Overview
+
+Folder Structure
+
+Module Description
+
+Architecture Overview
+
+Business Flow
+
+How to Run
+
+Future Improvements
+
+---
+
+# Important
+
+Do NOT generate fake or meaningless code.
+
+Do NOT generate repetitive functions.
+
+Do NOT generate placeholder implementations.
+
+Every file should contain useful logic.
+
+The final repository should be impressive enough that an interviewer reviewing the GitHub repository believes it represents a realistic backend used for demonstrating AI-powered QA and regression analysis tools.
