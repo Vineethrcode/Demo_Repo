@@ -1,2 +1,4 @@
+DATABASE_TIMEOUT = 60
+
 def connect():
-    pass
+    return True
